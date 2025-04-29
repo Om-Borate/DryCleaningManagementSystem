@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+ <properties>
+  <build-grdle>implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'</build-grdle>
+ </properties>
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.thi</groupId>
+  <artifactId>com.pc</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>com.pc Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+	  <!-- https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core -->
+	<dependency>
+	    <groupId>org.apache.tomcat.embed</groupId>
+	    <artifactId>tomcat-embed-core</artifactId>
+	    <version>10.1.24</version>
+	</dependency>
+	
+	 <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>2.15.2</version> <!-- Replace with the latest version if needed -->
+    </dependency>
+    
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.33</version>
+</dependency>
+
+	<dependency> 
+		<groupId>javax.servlet</groupId>
+		 <artifactId>javax.servlet-api</artifactId> 
+		 <version>4.0.1</version> 
+		 <scope>provided</scope>
+	 </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-annotations</artifactId>
+    <version>2.15.2</version>
+</dependency>
+		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20230227</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>jakarta.servlet</groupId>
+		    <artifactId>jakarta.servlet-api</artifactId>
+		    <version>5.0.0</version> <!-- Match your Tomcat version -->
+		    <scope>provided</scope>
+		</dependency>
+
+
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-annotations</artifactId>
+    <version>2.15.2</version>
+</dependency>
+
+  </dependencies>
+  <build>
+    <finalName>com.pc</finalName>
+  </build>
+</project>
